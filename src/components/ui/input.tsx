@@ -1,7 +1,7 @@
 "use client"
 import { faEye, faEyeSlash, IconDefinition } from "@fortawesome/free-regular-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { useState } from "react";
+import { useState, KeyboardEvent } from "react";
 
 type Props = {
     placeholder: string;
@@ -11,14 +11,21 @@ type Props = {
     filled?: boolean;
     value?: string;
     onChange?: (n : string) => void;
+    onEnter?: () => void;
 }
 
 
-export const InputZ = ({placeholder,password,type ,icon, filled, value,onChange }: Props) => {
-    const [showPass,setShowPass] = useState(false)
+export const InputZ = ({placeholder,password,type ,icon, filled, value,onChange,onEnter }: Props) => {
+    const [showPass,setShowPass] = useState(false);
+  
+    const handleKeyUp = (e:KeyboardEvent<HTMLInputElement>) => {
+        if((e.code.toLowerCase() === 'enter' || e.code.toLocaleLowerCase() === 'numpadenter') && onEnter) {
+            onEnter();
+        }
+    }
 
     return (
-        <div className={`has-[:focus]:border-white flex items-center h-14 rounded-3xl border-2 border-gray-700 ${filled && 'bg-gray-700'} `}>
+        <div className={`has-[:focus]:border-white flex items-center h-14 rounded-3xl border-2 border-gray-700 ${filled && 'bg-gray-700/50'} `}>
             {icon && 
                 <FontAwesomeIcon 
                     icon={icon}
@@ -31,6 +38,7 @@ export const InputZ = ({placeholder,password,type ,icon, filled, value,onChange 
                 value={value}
                 onChange={e => onChange && onChange(e.target.value)}
                 type={password && !showPass ? 'password' : type && type}
+                onKeyUp={handleKeyUp}
             />
             {password &&
                 <FontAwesomeIcon 
