@@ -34,7 +34,6 @@ export default function Layout({children}: {children : ReactNode}) {
             </section>
             <section className="flex-1 max-w-lg">
                 {children}
-                ....
             </section>
             <aside className="hidden lg:flex gap-6 flex-col sticky top-0 h-fit w-96 px-8 py-6 border-l-2 border-gray-900">
                 <SearchInput hideOnSearch />
