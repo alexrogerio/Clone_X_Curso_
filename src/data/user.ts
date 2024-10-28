@@ -23,8 +23,8 @@ export const user2: User = {
 
 
 export const user3: User = {
-    slug: 'elon Musk',
-    name: 'elonMusk',
+    slug: 'elonMusk',
+    name: 'Elon Musk',
     avatar: 'https://einvestidor.estadao.com.br/wp-content/uploads/2024/04/elon-musk-tesla-1_110420241132.jpg.webp',
     cover: 'https://img.freepik.com/fotos-gratis/conceito-de-viagem-completo-com-pontos-de-referencia_23-2149153258.jpg',
     bio: 'O Brabo',
