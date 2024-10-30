@@ -20,7 +20,7 @@ export const SearchInput = ({defaultValue,hideOnSearch} : Props) => {
             router.push('/search?q='+encodeURIComponent(seachInput));
         }
     }
-    if(hideOnSearch && pathName == '/seach') return null;
+    if(hideOnSearch && pathName === '/search') return null;
     return (
         <InputZ
             placeholder="Buscar"
@@ -32,3 +32,4 @@ export const SearchInput = ({defaultValue,hideOnSearch} : Props) => {
         />
     );
 }
+

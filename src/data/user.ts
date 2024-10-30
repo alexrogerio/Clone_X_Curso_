@@ -6,26 +6,26 @@ export const user: User = {
     avatar: 'https://ui-avatars.com/api/?background=random&name=Alex&size=100',
     cover: 'https://img.freepik.com/fotos-gratis/conceito-de-viagem-completo-com-pontos-de-referencia_23-2149153258.jpg',
     bio: 'Aprendendo',
-    link: 'https://b7web.com.br',
+    link: 'https://google.com.br',
     postCount: 127,
 }
 
 export const user2: User = {
-    slug: 'Pedro',
-    name: 'Pedro Sampaio',
-    avatar: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlJGvXQdVdhmNLTbOUW7nT9c_MJp1VV5-XEQ&s',
-    cover: 'https://img.freepik.com/fotos-gratis/conceito-de-viagem-completo-com-pontos-de-referencia_23-2149153258.jpg',
-    bio: 'O Brabo',
-    link: 'https://google.com',
+    slug: 'MercadoLivre',
+    name: 'Mercado Livre',
+    avatar: 'https://w7.pngwing.com/pngs/396/132/png-transparent-free-market-e-marketplace-brazil-market-economy-others-miscellaneous-text-service-thumbnail.png',
+    cover: 'https://i.ytimg.com/vi/_9N6R5hy5zg/maxresdefault.jpg',
+    bio: 'Mercado Livre',
+    link: 'https://mercadolivre.com.br',
     postCount: 127,
 }
 
 
 
 export const user3: User = {
-    slug: 'elonMusk',
-    name: 'Elon Musk',
-    avatar: 'https://einvestidor.estadao.com.br/wp-content/uploads/2024/04/elon-musk-tesla-1_110420241132.jpg.webp',
+    slug: 'AliExpress',
+    name: 'AliExpress',
+    avatar: 'https://m.media-amazon.com/images/I/41-1uF7Pn8L.png',
     cover: 'https://img.freepik.com/fotos-gratis/conceito-de-viagem-completo-com-pontos-de-referencia_23-2149153258.jpg',
     bio: 'O Brabo',
     link: 'https://google.com',
